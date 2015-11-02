@@ -1,5 +1,5 @@
 # ComPro
-My Competitive Programming Repo
+RYUW's Competitive Programming Repo
 
 ## 1. Queue (Time Limit: 3s)
 ### Description
