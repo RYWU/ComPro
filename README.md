@@ -72,3 +72,35 @@ For each test case, please output an integer indicating how many lucky numbers a
 ### Hint
 * All lucky numbers in [1,10000] are 777, 7077, 7707, 7770, 7777.
 * There are two bonus tests (3 points each) in this problem. The condition T≤300 holds for the first 10 tests.
+
+## Rabbit House (Time Limit: 1s)
+
+### Description
+
+Kokoa is a coffee shop clerk of Rabbit House. Since Rabbit House is a famous coffee shop, it earns lots of money per day. Kokoa records the total income si everyday, and checks whether it matches the cash Rabbit House has now. To prevent malicious modification, she also records ci, which is the checksum of si.
+
+As a normal high school girl, she doesn't know the complicate message digest algorithms like MD5 or SHA-1. Instead, she just calculate the digit sums of si. The digit sum of a given integer is the sum of all its digits. For example, if s=[302,1000,2011], the checksums will be c=[5,1,4].
+
+But this algorithm is too naive. It's easy to construct a different s with same checksums. For instance, if s=[5,10,13], the checksums will also be c=[5,1,4]. To show how unreliable is digit sum, please construct a valid s for a given c, such that the last element of s is as small as possible. If there are more than one possible s, choose the one with smallest sn−1, where n is the length of s. If there are still more than one possible s, choose the one with smallest sn−2, and so on.
+
+### Input Format
+
+The first line contains an integer T indicating the total number of test cases. Each test case starts with an integer n in one line, indicating the number of days, followed by a line of n integers c1,c2,…,cn.
+
+* 1≤T≤10
+* 1≤n,ci≤1000
+### Output Format
+
+For each test case, please output n integers s1,s2,…,sn in one line. Note that s should be strictly increasing since Rabbit House is famous and has income everyday.
+
+### Sample Input
+
+2
+3
+5 1 4
+10
+3 1 4 1 5 9 2 6 5 3
+### Sample Output
+
+5 10 13
+3 10 13 100 104 108 110 114 122 201
