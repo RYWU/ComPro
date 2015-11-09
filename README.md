@@ -89,6 +89,7 @@ The first line contains an integer T indicating the total number of test cases. 
 
 * 1≤T≤10
 * 1≤n,ci≤1000
+
 ### Output Format
 
 For each test case, please output n integers s1,s2,…,sn in one line. Note that s should be strictly increasing since Rabbit House is famous and has income everyday.
