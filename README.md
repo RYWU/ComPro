@@ -73,7 +73,7 @@ For each test case, please output an integer indicating how many lucky numbers a
 * All lucky numbers in [1,10000] are 777, 7077, 7707, 7770, 7777.
 * There are two bonus tests (3 points each) in this problem. The condition T≤300 holds for the first 10 tests.
 
-## Rabbit House (Time Limit: 1s)
+## 3.Rabbit House (Time Limit: 1s)
 
 ### Description
 
