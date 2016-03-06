@@ -128,7 +128,6 @@ The first line contains an integer TT indicating the total number of test cases.
 For each test case, please output the number of MUST edges and the sum of weight of MUST edges in one line.
 
 ### Sample Input
-
 3
 3 3
 1 2 3
@@ -142,8 +141,8 @@ For each test case, please output the number of MUST edges and the sum of weight
 1 2 3
 2 3 3
 3 1 4
-### Sample Output
 
+### Sample Output
 1 2
 0 0
 2 6
