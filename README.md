@@ -146,3 +146,63 @@ For each test case, please output the number of MUST edges and the sum of weight
 1 2
 0 0
 2 6
+
+## 5. Plagiarism (Time Limit: 2s)
+
+### Description
+
+HanHan is the chief urban designer of HyperHacker city. This city is known for its beautiful urban design. To simplify this problem, we treat HyperHacker city as an undirected graph, G1G1.
+
+HugeHammer, the lazy and evil urban designer of HappyHippo City, is too lazy to create his own design. He decides to just copy HanHan’s design, and randomly rename the vertices in the graph. We call the renamed graph G2G2.
+
+To simplify this problem again, we assume that the vertices of G1G1 and G2G2 are labelled as 1,2,…n1,2,…n. The renaming can be viewed as a random permutation ππ of 1,2,…,n1,2,…,n, so an edge (u,v)(u,v) in G1G1 would be an edge (π(u),π(v))(π(u),π(v)) in G2G2.
+
+For example, if there are three vertices and two edges in G1G1 and G2G2. The edges in G1G1 are (1,2)(1,2) and (2,3)(2,3). The edges in G2G2 are (2,3)(2,3) and (1,3)(1,3). A possible permutation is π=⟨1,3,2⟩π=⟨1,3,2⟩. Since we can map edge (1,2)(1,2) in G1G1 to (π(1),π(2))=(1,3)(π(1),π(2))=(1,3) in G2G2, and (2,3)(2,3) in G1G1 to (π(2),π(3))=(3,2)(π(2),π(3))=(3,2) in G2G2. Note that the graphs are undirected, so (2,3)(2,3) and (3,2)(3,2) are interchangeable.
+
+Please help HanHan to find the permutation ππ as the evidence of plagiarism.
+
+
+### Input Format
+
+The first line contains an integer TT indicating the total number of test cases. Each test case starts with a line containing two integers n,mn,m, denoting the number of nodes and edges in the undirected graphs G1,G2G1,G2. Each the following mm lines contains two integers ai,biai,bi, denoting an edge (ai,bi)(ai,bi) in G1G1. Each the following mm lines contains two integers ci,dici,di, denoting an edge (ci,di)(ci,di) in G2G2.
+
+* 1≤T≤101≤T≤10
+* 3≤n≤100003≤n≤10000
+* 0≤m≤1000000≤m≤100000
+* 1≤ai,bi,ci,di≤n1≤ai,bi,ci,di≤n
+* There be self-loops and/or multi-edges in the graphs.
+
+### Output Format
+
+For each test case, please output the permutation ππ in one line as π(1),π(2),…π(n)π(1),π(2),…π(n) separated by a space. If there are more than one possible permutation, you can output any one of them.
+
+### Sample Input
+3
+3 2
+1 2
+2 3
+2 3
+1 3
+3 3
+1 2
+2 3
+3 1
+1 3
+3 2
+1 2
+3 3
+1 1
+2 3
+3 2
+2 2
+3 1
+1 3
+
+### Sample Output
+1 3 2
+1 2 3
+2 1 3
+
+### Hint
+* There are two bonus tests (3 points each) in this problem. The condition n≤1000n≤1000 and m≤10000m≤10000 holds for the first 10 tests.
+* The top secret of HanHan is that he just random generated a graph as his design.
