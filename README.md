@@ -105,3 +105,45 @@ For each test case, please output n integers s1,s2,…,sn in one line. Note that
 
 5 10 13
 3 10 13 100 104 108 110 114 122 201
+
+## 4. MUST (Time Limit: 2s)
+
+### Description
+
+HH just learned MST (Minimum Spanning Tree) in the ADA course. To practice, he wants to find a MST of an undirected graph GG. But he notices that there may be more than one possible MST of GG. To make his life easier, he tries to choose the edges exist in every MST first. We call such edges MUST edges since you must choose them in MST. However, finding MUST edges is a hard task, can you help him?
+
+### Input Format
+
+The first line contains an integer TT indicating the total number of test cases. Each test case starts with a line contains two integers n,mn,m, denoting the number of nodes and edges in the undirected graph GG. Each of the following mm lines contains three integers ai,bi,ciai,bi,ci, which means there is an edge (ai,bi)(ai,bi) with weight cici in GG.
+
+* 1≤T≤101≤T≤10
+* 3≤n≤500003≤n≤50000
+* n−1≤m≤100000n−1≤m≤100000
+* 1≤ai,bi≤n1≤ai,bi≤n and ai≠biai≠bi
+* 1≤ci≤1071≤ci≤107
+* GG is connected
+
+### Output Format
+
+For each test case, please output the number of MUST edges and the sum of weight of MUST edges in one line.
+
+### Sample Input
+
+3
+3 3
+1 2 3
+2 3 3
+3 1 2
+3 3
+1 2 3
+2 3 3
+3 1 3
+3 3
+1 2 3
+2 3 3
+3 1 4
+### Sample Output
+
+1 2
+0 0
+2 6
